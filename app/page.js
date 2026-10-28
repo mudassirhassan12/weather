@@ -152,7 +152,7 @@ export default function Home() {
               onFocus={() => setOpen(true)}
               onBlur={() => setTimeout(() => setOpen(false), 150)}
               onKeyDown={onKeyDown}
-              placeholder="Search a city, e.g. Karachi"
+              placeholder="Search any city or town"
               aria-label="City name"
               aria-autocomplete="list"
               autoComplete="off"

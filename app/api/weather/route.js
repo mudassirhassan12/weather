@@ -207,7 +207,7 @@ export async function GET(request) {
     return NextResponse.json({
       city: name,
       country,
-      timezone: ok[0].timezone,
+      timezone: (ow.value || om.value)?.timezone ?? 0,
       readings: ok.map((o) => o.reading),
     });
   } catch {
